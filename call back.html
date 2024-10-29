@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <script>
+    function operation (a,b,callback){
+        callback(a,b)
+    }
+    function addition(a,b){
+        console.log(a+b)
+    }
+    function subtraction(a,b){
+        console.log(a-b)
+    }
+    function mul(a,b){
+        console.log(a*b)
+    }
+    function div (a,b){
+        console.log(a%b)
+    }
+    function exponential(a,b){
+        console.log(a**b)
+    }
+    operation (20,30,addition)
+    operation (10,7,subtraction)
+    operation (3,8,div)
+    operation (6,9,mul)
+    operation (8,6,exponential)  
+</script>
+</body>
+</html>
